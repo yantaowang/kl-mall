@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kl</groupId>
+    <artifactId>kl-mall</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+
+        <module>kl-platform-user</module>
+        <module>kl-platform-product</module>
+        <module>kl-platform-manager</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.version>1.0-SNAPSHOT</project.version>
+        <kl.version>1.0-SNAPSHOT</kl.version>
+        <kl-platform.version>1.0-SNAPSHOT</kl-platform.version>
+        <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
+        <kl-core.version>1.0-SNAPSHOT</kl-core.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-user-api</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-user-service</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-user-web</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.kl</groupId>-->
+<!--                <artifactId>kl-platform-common</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.kl</groupId>-->
+<!--                <artifactId>kl-platform-service</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.kl</groupId>-->
+<!--                <artifactId>kl-platform-web</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-common</artifactId>
+                <version>${kl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-platform</artifactId>
+                <version>${kl-core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

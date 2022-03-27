@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kl-platform-manager" />
+        <module name="kl-user-service" />
+        <module name="kl-user-web" />
+        <module name="kl-user-api" />
+        <module name="kl-platform-product" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kl-mall" target="8" />
+      <module name="kl-mall-user" target="8" />
+      <module name="kl-platform-manager" target="8" />
+      <module name="kl-platform-product" target="8" />
+      <module name="kl-platform-user" target="8" />
+      <module name="kl-user-api" target="8" />
+      <module name="kl-user-service" target="8" />
+      <module name="kl-user-web" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

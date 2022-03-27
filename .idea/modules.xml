@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/kl-mall.iml" filepath="$PROJECT_DIR$/.idea/kl-mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-manager/kl-platform-manager.iml" filepath="$PROJECT_DIR$/kl-platform-manager/kl-platform-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-product/kl-platform-product.iml" filepath="$PROJECT_DIR$/kl-platform-product/kl-platform-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-platform-user.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-platform-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-user-api/kl-user-api.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-user-api/kl-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-user-service/kl-user-service.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-user-service/kl-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-user-web/kl-user-web.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-user-web/kl-user-web.iml" />
+    </modules>
+  </component>
+</project>
