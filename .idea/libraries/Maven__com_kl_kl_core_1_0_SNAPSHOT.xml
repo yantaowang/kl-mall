@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.kl:kl-core:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://E:/repository/com/kl/kl-core/1.0-SNAPSHOT/kl-core-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/repository/com/kl/kl-core/1.0-SNAPSHOT/kl-core-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/repository/com/kl/kl-core/1.0-SNAPSHOT/kl-core-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
