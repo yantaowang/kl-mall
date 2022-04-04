@@ -1,20 +1,20 @@
 spring:
   datasource:
     dynamic:
-      primary: master
+      primary: first
       datasource:
-        master:
+        first:
           driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://127.0.0.1:3306/kl_mall?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnect=true&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3358/kl_mall?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnect=true&serverTimezone=GMT%2B8
           username: root
           password: ams2020
           druid:
             initial-size: 10
             max-active: 100
             min-idle: 10
-        slave:
+        second:
           driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://127.0.0.1:3306/kl_mall?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnect=true&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3358/kl_mall?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnect=true&serverTimezone=GMT%2B8
           username: root
           password: ams2020
           druid:

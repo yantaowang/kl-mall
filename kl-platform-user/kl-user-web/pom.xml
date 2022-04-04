@@ -21,6 +21,10 @@
             <groupId>com.kl</groupId>
             <artifactId>kl-user-service</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.kl</groupId>
+            <artifactId>kl-web-starter</artifactId>
+        </dependency>
         <!--spring-boot-starter-test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

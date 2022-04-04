@@ -2,6 +2,7 @@ package com.kl.user.service.data;
 
 import com.kl.user.api.model.UmsAdminRoleRelation;
 import com.kl.user.api.model.UmsPermission;
+import com.kl.user.api.model.UmsResource;
 import com.kl.user.api.model.UmsRole;
 import org.apache.ibatis.annotations.Param;
 
@@ -31,4 +32,14 @@ public interface UmsAdminRoleRelationDao {
      * 获取用户所有权限(包括+-权限)
      */
     List<UmsPermission> getPermissionList(@Param("adminId") Long adminId);
+
+    /**
+     * 获取用户所有可访问资源
+     */
+    List<UmsResource> getResourceList(@Param("adminId") Long adminId);
+
+    /**
+     * 获取资源相关用户ID列表
+     */
+    List<Long> getAdminIdList(@Param("resourceId") Long resourceId);
 }

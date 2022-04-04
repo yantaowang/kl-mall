@@ -3,6 +3,7 @@ package com.kl.user.service.data;
 import com.kl.user.api.model.UmsAdminLoginLog;
 import com.kl.user.api.model.UmsAdminLoginLogExample;
 import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface UmsAdminLoginLogMapper {

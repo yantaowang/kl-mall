@@ -1,7 +1,7 @@
-package com.kl.user.service.data;
+package com.kl.user.api.service;
 
-import com.kl.user.api.dto.UmsPermissionNode;
 import com.kl.user.api.model.UmsPermission;
+import com.kl.user.api.dto.UmsPermissionNode;
 
 import java.util.List;
 

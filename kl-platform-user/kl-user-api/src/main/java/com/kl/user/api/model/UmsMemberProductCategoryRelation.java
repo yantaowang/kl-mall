@@ -1,5 +1,6 @@
 package com.kl.user.api.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
 public class UmsMemberProductCategoryRelation implements Serializable {

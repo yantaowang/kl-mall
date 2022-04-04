@@ -1,7 +1,6 @@
 package com.kl.user.api.model;
 
 import io.swagger.annotations.ApiModelProperty;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -37,7 +36,7 @@ public class UmsMember implements Serializable {
     @ApiModelProperty(value = "生日")
     private Date birthday;
 
-    @ApiModelProperty(value = "所在城市")
+    @ApiModelProperty(value = "所做城市")
     private String city;
 
     @ApiModelProperty(value = "职业")
