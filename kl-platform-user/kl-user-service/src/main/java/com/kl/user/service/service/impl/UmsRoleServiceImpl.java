@@ -1,6 +1,7 @@
 package com.kl.user.service.service.impl;
 
 import com.github.pagehelper.PageHelper;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.service.UmsResourceService;
 import com.kl.user.api.service.UmsRoleService;
 import com.kl.user.service.data.UmsRoleDao;
@@ -8,10 +9,12 @@ import com.kl.user.service.data.UmsRoleMapper;
 import com.kl.user.service.data.UmsRoleMenuRelationMapper;
 import com.kl.user.service.data.UmsRoleResourceRelationMapper;
 import com.kl.user.api.model.*;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 
@@ -19,15 +22,15 @@ import java.util.List;
  * 后台角色管理Service实现类
  * Created by macro on 2018/9/30.
  */
-@Service
+@DubboService(version = UserApiVersion.VERSION_1, group = UserApiVersion.GROUP_KL)
 public class UmsRoleServiceImpl implements UmsRoleService {
-    @Autowired
+    @Resource
     private UmsRoleMapper roleMapper;
-    @Autowired
+    @Resource
     private UmsRoleMenuRelationMapper roleMenuRelationMapper;
-    @Autowired
+    @Resource
     private UmsRoleResourceRelationMapper roleResourceRelationMapper;
-    @Autowired
+    @Resource
     private UmsRoleDao roleDao;
     @Autowired
     private UmsResourceService resourceService;

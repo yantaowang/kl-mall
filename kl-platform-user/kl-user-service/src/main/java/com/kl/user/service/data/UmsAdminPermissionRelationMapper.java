@@ -1,12 +1,14 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsAdminPermissionRelation;
 import com.kl.user.api.model.UmsAdminPermissionRelationExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsAdminPermissionRelationMapper {
+
+public interface UmsAdminPermissionRelationMapper extends BaseMapper<UmsAdminPermissionRelation> {
     long countByExample(UmsAdminPermissionRelationExample example);
 
     int deleteByExample(UmsAdminPermissionRelationExample example);

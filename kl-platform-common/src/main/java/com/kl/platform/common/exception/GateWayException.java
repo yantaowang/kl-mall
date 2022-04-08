@@ -1,7 +1,7 @@
 package com.kl.platform.common.exception;
 
 
-import com.kl.platform.common.api.IErrorCode;
+import com.kl.platform.common.api.ResultCode;
 import lombok.Data;
 
 /**
@@ -18,7 +18,7 @@ public class GateWayException extends RuntimeException{
 
     private String message;
 
-    public GateWayException(IErrorCode iErrorCode) {
+    public GateWayException(ResultCode iErrorCode) {
         this.code = iErrorCode.getCode();
         this.message = iErrorCode.getMessage();
     }

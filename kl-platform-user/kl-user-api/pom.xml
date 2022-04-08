@@ -45,8 +45,14 @@
             <version>1.9.6</version>
         </dependency>
         <dependency>
-            <groupId>com.kl</groupId>
-            <artifactId>kl-platform-security</artifactId>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
+            <version>3.4.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
         </dependency>
     </dependencies>
 

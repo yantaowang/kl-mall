@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsIntegrationChangeHistory;
 import com.kl.user.api.model.UmsIntegrationChangeHistoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsIntegrationChangeHistoryMapper {
+public interface UmsIntegrationChangeHistoryMapper extends BaseMapper<UmsIntegrationChangeHistory> {
     long countByExample(UmsIntegrationChangeHistoryExample example);
 
     int deleteByExample(UmsIntegrationChangeHistoryExample example);

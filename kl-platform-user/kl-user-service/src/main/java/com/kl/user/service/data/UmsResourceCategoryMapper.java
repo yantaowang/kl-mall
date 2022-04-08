@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsResourceCategory;
 import com.kl.user.api.model.UmsResourceCategoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsResourceCategoryMapper {
+public interface UmsResourceCategoryMapper extends BaseMapper<UmsResourceCategory> {
     long countByExample(UmsResourceCategoryExample example);
 
     int deleteByExample(UmsResourceCategoryExample example);

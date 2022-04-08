@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsRoleMenuRelation;
 import com.kl.user.api.model.UmsRoleMenuRelationExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsRoleMenuRelationMapper {
+public interface UmsRoleMenuRelationMapper extends BaseMapper<UmsRoleMenuRelation> {
     long countByExample(UmsRoleMenuRelationExample example);
 
     int deleteByExample(UmsRoleMenuRelationExample example);

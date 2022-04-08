@@ -1,9 +1,11 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 import java.util.Date;
 
+@TableName("ums_member_login_log")
 public class UmsAdminLoginLog implements Serializable {
     private Long id;
 

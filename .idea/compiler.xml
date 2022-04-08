@@ -9,7 +9,6 @@
         <module name="kl-platform-manager" />
         <module name="kl-user-api" />
         <module name="kl-platform-product" />
-        <module name="kl-platform-security" />
         <module name="kl-user-service" />
         <module name="kl-user-web" />
         <module name="kl-platform-common" />

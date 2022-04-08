@@ -1,9 +1,10 @@
 package com.kl.user.service.service.impl;
 
 import com.kl.redis.starter.service.RedisCommand;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.model.UmsAdmin;
 import com.kl.user.api.service.UmsAdminCacheService;
-import com.kl.user.api.service.UmsAdminService;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -14,17 +15,15 @@ import java.util.concurrent.TimeUnit;
  * UmsAdminCacheService实现类
  * Created by macro on 2020/3/13.
  */
-@Service
+@DubboService(version = UserApiVersion.VERSION_1, group = UserApiVersion.GROUP_KL)
 public class UmsAdminCacheServiceImpl implements UmsAdminCacheService {
     @Autowired
-    private UmsAdminService adminService;
-    @Autowired
     private RedisCommand redisCommand;
-    @Value("${redis.database}")
+    @Value("${redis.database:0}")
     private String REDIS_DATABASE;
-    @Value("${redis.expire.common}")
+    @Value("${redis.expire.common:5}")
     private Long REDIS_EXPIRE;
-    @Value("${redis.key.admin}")
+    @Value("${redis.key.admin:admin}")
     private String REDIS_KEY_ADMIN;
 
     @Override

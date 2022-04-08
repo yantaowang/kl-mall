@@ -1,5 +1,6 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsAdminRoleRelation;
 import com.kl.user.api.model.UmsPermission;
 import com.kl.user.api.model.UmsResource;
@@ -12,7 +13,7 @@ import java.util.List;
  * 后台用户与角色管理自定义Dao
  * Created on 2018/10/8.
  */
-public interface UmsAdminRoleRelationDao {
+public interface UmsAdminRoleRelationDao extends BaseMapper<UmsAdminRoleRelation> {
     /**
      * 批量插入用户角色关系
      */

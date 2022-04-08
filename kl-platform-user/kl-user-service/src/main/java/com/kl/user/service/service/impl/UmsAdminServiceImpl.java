@@ -12,23 +12,25 @@ import com.kl.platform.common.domain.UserDto;
 import com.kl.platform.common.exception.Asserts;
 import com.kl.user.api.dto.UmsAdminParam;
 import com.kl.user.api.dto.UpdateAdminPasswordParam;
+import com.kl.user.api.dversion.UserApiVersion;
+import com.kl.user.api.model.*;
 import com.kl.user.api.service.UmsAdminCacheService;
 import com.kl.user.api.service.UmsAdminService;
 import com.kl.user.service.data.UmsAdminLoginLogMapper;
 import com.kl.user.service.data.UmsAdminMapper;
 import com.kl.user.service.data.UmsAdminRoleRelationDao;
 import com.kl.user.service.data.UmsAdminRoleRelationMapper;
-import com.kl.user.api.model.*;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -37,16 +39,16 @@ import java.util.stream.Collectors;
  * UmsAdminService实现类
  * Created by macro on 2018/4/26.
  */
-@Service
+@DubboService(version = UserApiVersion.VERSION_1, group = UserApiVersion.GROUP_KL)
 public class UmsAdminServiceImpl implements UmsAdminService {
     private static final Logger LOGGER = LoggerFactory.getLogger(UmsAdminServiceImpl.class);
-    @Autowired
+    @Resource
     private UmsAdminMapper adminMapper;
-    @Autowired
+    @Resource
     private UmsAdminRoleRelationMapper adminRoleRelationMapper;
-    @Autowired
+    @Resource
     private UmsAdminRoleRelationDao adminRoleRelationDao;
-    @Autowired
+    @Resource
     private UmsAdminLoginLogMapper loginLogMapper;
 //    @Autowired
 //    private AuthService authService;

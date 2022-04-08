@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsAdmin;
 import com.kl.user.api.model.UmsAdminExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsAdminMapper {
+public interface UmsAdminMapper extends BaseMapper<UmsAdmin> {
     long countByExample(UmsAdminExample example);
 
     int deleteByExample(UmsAdminExample example);

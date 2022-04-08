@@ -14,7 +14,6 @@
         <module>kl-platform-product</module>
         <module>kl-platform-manager</module>
         <module>kl-platform-common</module>
-        <module>kl-platform-security</module>
     </modules>
 
     <properties>
@@ -34,11 +33,6 @@
             <dependency>
                 <groupId>com.kl</groupId>
                 <artifactId>kl-platform-common</artifactId>
-                <version>${kl-platform.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.kl</groupId>
-                <artifactId>kl-platform-security</artifactId>
                 <version>${kl-platform.version}</version>
             </dependency>
             <dependency>

@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan({"com.kl.user.service.data.*"})
+@MapperScan({"com.kl.user.service.data"})
 @EnableAsync
 @Slf4j
 public class KlUserWebApplication {

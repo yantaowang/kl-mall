@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsMemberReceiveAddress;
 import com.kl.user.api.model.UmsMemberReceiveAddressExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsMemberReceiveAddressMapper {
+public interface UmsMemberReceiveAddressMapper extends BaseMapper<UmsMemberReceiveAddress> {
     long countByExample(UmsMemberReceiveAddressExample example);
 
     int deleteByExample(UmsMemberReceiveAddressExample example);

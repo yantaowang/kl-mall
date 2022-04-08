@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsMemberTask;
 import com.kl.user.api.model.UmsMemberTaskExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsMemberTaskMapper {
+public interface UmsMemberTaskMapper extends BaseMapper<UmsMemberTask> {
     long countByExample(UmsMemberTaskExample example);
 
     int deleteByExample(UmsMemberTaskExample example);

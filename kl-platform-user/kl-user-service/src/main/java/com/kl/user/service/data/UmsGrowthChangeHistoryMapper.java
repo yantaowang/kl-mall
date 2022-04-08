@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsGrowthChangeHistory;
 import com.kl.user.api.model.UmsGrowthChangeHistoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsGrowthChangeHistoryMapper {
+public interface UmsGrowthChangeHistoryMapper extends BaseMapper<UmsGrowthChangeHistory> {
     long countByExample(UmsGrowthChangeHistoryExample example);
 
     int deleteByExample(UmsGrowthChangeHistoryExample example);

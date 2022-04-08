@@ -1,15 +1,15 @@
 package com.kl.platform.common.exception;
 
-import com.kl.platform.common.api.IErrorCode;
+import com.kl.platform.common.api.ResultCode;
 
 /**
  * 自定义API异常
  * Created by macro on 2020/2/27.
  */
 public class ApiException extends RuntimeException {
-    private IErrorCode errorCode;
+    private ResultCode errorCode;
 
-    public ApiException(IErrorCode errorCode) {
+    public ApiException(ResultCode errorCode) {
         super(errorCode.getMessage());
         this.errorCode = errorCode;
     }
@@ -26,7 +26,7 @@ public class ApiException extends RuntimeException {
         super(message, cause);
     }
 
-    public IErrorCode getErrorCode() {
+    public ResultCode getErrorCode() {
         return errorCode;
     }
 }

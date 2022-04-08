@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsMenu;
 import com.kl.user.api.model.UmsMenuExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsMenuMapper {
+public interface UmsMenuMapper extends BaseMapper<UmsMenu> {
     long countByExample(UmsMenuExample example);
 
     int deleteByExample(UmsMenuExample example);

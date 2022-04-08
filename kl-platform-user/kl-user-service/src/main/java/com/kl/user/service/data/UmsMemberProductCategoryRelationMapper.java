@@ -1,12 +1,13 @@
 package com.kl.user.service.data;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kl.user.api.model.UmsMemberProductCategoryRelation;
 import com.kl.user.api.model.UmsMemberProductCategoryRelationExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UmsMemberProductCategoryRelationMapper {
+public interface UmsMemberProductCategoryRelationMapper extends BaseMapper<UmsMemberProductCategoryRelation> {
     long countByExample(UmsMemberProductCategoryRelationExample example);
 
     int deleteByExample(UmsMemberProductCategoryRelationExample example);

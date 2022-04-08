@@ -1,6 +1,6 @@
 package com.kl.platform.common.exception;
 
-import com.kl.platform.common.api.IErrorCode;
+import com.kl.platform.common.api.ResultCode;
 
 /**
  * 断言处理类，用于抛出各种API异常
@@ -11,7 +11,7 @@ public class Asserts {
         throw new ApiException(message);
     }
 
-    public static void fail(IErrorCode errorCode) {
+    public static void fail(ResultCode errorCode) {
         throw new ApiException(errorCode);
     }
 }

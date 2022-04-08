@@ -10,6 +10,7 @@ import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,9 +19,9 @@ import java.util.stream.Collectors;
  * 后台用户权限管理Service实现类
  * Created on 2018/9/29.
  */
-@DubboService(version = UserApiVersion.VERSION_1, group = UserApiVersion.GROUP_EWP)
+@DubboService(version = UserApiVersion.VERSION_1, group = UserApiVersion.GROUP_KL)
 public class UmsPermissionServiceImpl implements UmsPermissionService {
-    @Autowired
+    @Resource
     private UmsPermissionMapper permissionMapper;
 
     @Override

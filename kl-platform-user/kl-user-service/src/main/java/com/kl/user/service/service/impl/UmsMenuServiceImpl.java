@@ -2,13 +2,16 @@ package com.kl.user.service.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.kl.user.api.dto.UmsMenuNode;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.service.UmsMenuService;
 import com.kl.user.service.data.UmsMenuMapper;
 import com.kl.user.api.model.*;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,9 +20,9 @@ import java.util.stream.Collectors;
  * 后台菜单管理Service实现类
  * Created by macro on 2020/2/2.
  */
-@Service
+@DubboService(version = UserApiVersion.VERSION_1, group = UserApiVersion.GROUP_KL)
 public class UmsMenuServiceImpl implements UmsMenuService {
-    @Autowired
+    @Resource
     private UmsMenuMapper menuMapper;
 
     @Override

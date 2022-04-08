@@ -4,15 +4,18 @@ import cn.hutool.core.util.StrUtil;
 import com.github.pagehelper.PageHelper;
 import com.kl.platform.common.constant.AuthConstant;
 import com.kl.redis.starter.service.RedisCommand;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.service.UmsResourceService;
 import com.kl.user.service.data.UmsResourceMapper;
 import com.kl.user.service.data.UmsRoleMapper;
 import com.kl.user.service.data.UmsRoleResourceRelationMapper;
 import com.kl.user.api.model.*;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -20,13 +23,13 @@ import java.util.stream.Collectors;
  * 后台资源管理Service实现类
  * Created by macro on 2020/2/2.
  */
-@Service
+@DubboService(version = UserApiVersion.VERSION_1, group = UserApiVersion.GROUP_KL)
 public class UmsResourceServiceImpl implements UmsResourceService {
-    @Autowired
+    @Resource
     private UmsResourceMapper resourceMapper;
-    @Autowired
+    @Resource
     private UmsRoleMapper roleMapper;
-    @Autowired
+    @Resource
     private UmsRoleResourceRelationMapper roleResourceRelationMapper;
     @Autowired
     private RedisCommand redisCommand;
