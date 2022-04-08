@@ -1,9 +1,12 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@TableName("ums_menu")
 public class UmsMenuExample {
     protected String orderByClause;
 

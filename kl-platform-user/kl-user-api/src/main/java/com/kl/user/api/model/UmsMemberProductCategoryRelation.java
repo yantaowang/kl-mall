@@ -1,8 +1,10 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
+@TableName("ums_member_product_category_relation")
 public class UmsMemberProductCategoryRelation implements Serializable {
     private Long id;
 

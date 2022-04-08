@@ -1,8 +1,10 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
+@TableName("ums_role_permission_relation")
 public class UmsRolePermissionRelation implements Serializable {
     private Long id;
 

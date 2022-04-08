@@ -1,9 +1,11 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+@TableName("ums_member_rule_setting")
 public class UmsMemberRuleSetting implements Serializable {
     private Long id;
 

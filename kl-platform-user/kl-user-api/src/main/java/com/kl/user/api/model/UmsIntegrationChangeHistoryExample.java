@@ -1,9 +1,12 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@TableName("ums_integration_consume_setting")
 public class UmsIntegrationChangeHistoryExample {
     protected String orderByClause;
 

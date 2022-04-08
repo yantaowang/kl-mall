@@ -1,10 +1,13 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@TableName("ums_member_statistics_info")
 public class UmsMemberStatisticsInfoExample {
     protected String orderByClause;
 

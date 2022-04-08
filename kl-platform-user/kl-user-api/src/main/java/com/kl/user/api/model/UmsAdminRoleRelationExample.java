@@ -1,8 +1,11 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@TableName("ums_admin_role_relation")
 public class UmsAdminRoleRelationExample {
     protected String orderByClause;
 

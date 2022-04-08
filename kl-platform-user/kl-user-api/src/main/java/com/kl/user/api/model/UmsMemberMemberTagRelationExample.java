@@ -1,8 +1,11 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@TableName("ums_member_member_tag_relation")
 public class UmsMemberMemberTagRelationExample {
     protected String orderByClause;
 

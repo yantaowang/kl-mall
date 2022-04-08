@@ -1,9 +1,12 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+@TableName("ums_member_rule_setting")
 public class UmsMemberRuleSettingExample {
     protected String orderByClause;
 

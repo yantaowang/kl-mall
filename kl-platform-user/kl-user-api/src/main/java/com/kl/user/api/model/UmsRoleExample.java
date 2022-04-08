@@ -1,9 +1,12 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@TableName("ums_role")
 public class UmsRoleExample {
     protected String orderByClause;
 

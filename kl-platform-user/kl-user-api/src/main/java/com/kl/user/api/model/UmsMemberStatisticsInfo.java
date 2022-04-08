@@ -1,10 +1,12 @@
 package com.kl.user.api.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
+@TableName("ums_member_statistics_info")
 public class UmsMemberStatisticsInfo implements Serializable {
     private Long id;
 
