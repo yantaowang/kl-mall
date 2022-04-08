@@ -37,6 +37,11 @@
             </dependency>
             <dependency>
                 <groupId>com.kl</groupId>
+                <artifactId>kl-platform-manager</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
                 <artifactId>kl-user-api</artifactId>
                 <version>${kl-platform.version}</version>
             </dependency>

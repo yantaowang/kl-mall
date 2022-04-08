@@ -2,10 +2,10 @@ package com.kl.platform.manager.controller;
 
 import cn.hutool.core.collection.CollUtil;
 import com.kl.platform.common.api.CommonPage;
-import com.kl.platform.common.api.CommonResult;
 import com.kl.platform.common.domain.UserDto;
 import com.kl.user.api.dto.UmsAdminLoginParam;
 import com.kl.user.api.dto.UmsAdminParam;
+import com.kl.platform.common.api.CommonResult;
 import com.kl.user.api.dto.UpdateAdminPasswordParam;
 import com.kl.user.api.model.UmsAdmin;
 import com.kl.user.api.model.UmsRole;

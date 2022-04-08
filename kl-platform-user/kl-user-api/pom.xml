@@ -50,10 +50,6 @@
             <version>3.4.3</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-annotation</artifactId>
-        </dependency>
     </dependencies>
 
 </project>
