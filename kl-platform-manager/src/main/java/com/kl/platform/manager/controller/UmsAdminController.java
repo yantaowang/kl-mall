@@ -7,12 +7,14 @@ import com.kl.user.api.dto.UmsAdminLoginParam;
 import com.kl.user.api.dto.UmsAdminParam;
 import com.kl.platform.common.api.CommonResult;
 import com.kl.user.api.dto.UpdateAdminPasswordParam;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.model.UmsAdmin;
 import com.kl.user.api.model.UmsRole;
 import com.kl.user.api.service.UmsAdminService;
 import com.kl.user.api.service.UmsRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -30,9 +32,9 @@ import java.util.stream.Collectors;
 @Api(tags = "UmsAdminController", description = "后台用户管理")
 @RequestMapping("/admin")
 public class UmsAdminController {
-    @Autowired
+    @DubboReference(version = UserApiVersion.VERSION_1,group = UserApiVersion.GROUP_KL)
     private UmsAdminService adminService;
-    @Autowired
+    @DubboReference(version = UserApiVersion.VERSION_1,group = UserApiVersion.GROUP_KL)
     private UmsRoleService roleService;
 
     @ApiOperation(value = "用户注册")

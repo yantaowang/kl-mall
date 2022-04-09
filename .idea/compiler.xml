@@ -6,22 +6,41 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kl-platform-manager" />
         <module name="kl-user-api" />
-        <module name="kl-platform-product" />
+        <module name="kl-other-service" />
+        <module name="kl-other-api" />
+        <module name="kl-product-api" />
+        <module name="kl-product-service" />
+        <module name="kl-platform-manager" />
+        <module name="kl-product-web" />
+        <module name="kl-order-web" />
+        <module name="kl-order-api" />
         <module name="kl-user-service" />
         <module name="kl-user-web" />
+        <module name="kl-order-service" />
         <module name="kl-platform-common" />
+        <module name="kl-other-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="kl-mall" target="8" />
       <module name="kl-mall-user" target="8" />
+      <module name="kl-order-api" target="8" />
+      <module name="kl-order-service" target="8" />
+      <module name="kl-order-web" target="8" />
+      <module name="kl-other-api" target="8" />
+      <module name="kl-other-service" target="8" />
+      <module name="kl-other-web" target="8" />
       <module name="kl-platform-common" target="8" />
       <module name="kl-platform-manager" target="8" />
+      <module name="kl-platform-order" target="8" />
+      <module name="kl-platform-other" target="8" />
       <module name="kl-platform-product" target="8" />
       <module name="kl-platform-security" target="8" />
       <module name="kl-platform-user" target="8" />
+      <module name="kl-product-api" target="8" />
+      <module name="kl-product-service" target="8" />
+      <module name="kl-product-web" target="8" />
       <module name="kl-user-api" target="8" />
       <module name="kl-user-service" target="8" />
       <module name="kl-user-web" target="8" />

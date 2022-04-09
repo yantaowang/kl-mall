@@ -1,0 +1,38 @@
+server:
+  port: ${server_port:16091}
+
+spring:
+  # 开发环境其他配置，用于开发环境区分在测试、预发、生产的公共配置，在 测试、预发、生产 要去掉
+  profiles:
+    include:
+      - test-biz
+      - test-sentinel
+  cloud:
+    nacos:
+      discovery:
+        metadata:
+          #心跳间隔默认5s。时间单位:毫秒。心跳间隔
+          preserved.heart.beat.interval: 3000
+          #心跳超时默认15s。时间单位:毫秒。 即服务端15秒收不到客户端心跳，会将该客户端注册的实例设为不健康：(本地测试该配置没有效果)
+          preserved.heart.beat.timeout: 9000
+          #Ip删除超时默认30s。时间单位:毫秒。即服务端30秒收不到客户端心跳，会将该客户端注册的实例删除：
+          preserved.ip.delete.timeout: 9000
+        server-addr: ${NACOS_DISCOVERY_URL:127.0.0.1:8848}
+        username: ${NACOS_DISCOVERY_USERNAME:nacos}
+        password: ${NACOS_DISCOVERY_PASSWORD:nacos}
+        namespace: public
+        group: kl
+      config:
+        server-addr: ${NACOS_CONFIG_URL:127.0.0.1:8848}
+        username: ${NACOS_DISCOVERY_USERNAME:nacos}
+        password: ${NACOS_DISCOVERY_PASSWORD:nacos}
+        namespace: test-user
+        group: kl
+        file-extension: yml
+        extension-configs:
+          - data-id: ${spring.application.name}-biz.yml
+            group: kl
+            refresh: true
+          - data-id: common-sentinel.yml
+            group: kl
+            refresh: true

@@ -1,10 +1,12 @@
 package com.kl.platform.manager.controller;
 
 import com.kl.platform.common.api.CommonResult;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.model.UmsResourceCategory;
 import com.kl.user.api.service.UmsResourceCategoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +20,7 @@ import java.util.List;
 @Api(tags = "UmsResourceCategoryController", description = "后台资源分类管理")
 @RequestMapping("/resourceCategory")
 public class UmsResourceCategoryController {
-    @Autowired
+    @DubboReference(version = UserApiVersion.VERSION_1,group = UserApiVersion.GROUP_KL)
     private UmsResourceCategoryService resourceCategoryService;
 
     @ApiOperation("查询所有后台资源分类")

@@ -2,10 +2,12 @@ package com.kl.platform.manager.controller;
 
 import com.kl.platform.common.api.CommonResult;
 import com.kl.user.api.dto.UmsPermissionNode;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.model.UmsPermission;
 import com.kl.user.api.service.UmsPermissionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +21,7 @@ import java.util.List;
 @Api(tags = "UmsPermissionController", description = "后台用户权限管理")
 @RequestMapping("/permission")
 public class UmsPermissionController {
-    @Autowired
+    @DubboReference(version = UserApiVersion.VERSION_1,group = UserApiVersion.GROUP_KL)
     private UmsPermissionService permissionService;
     @ApiOperation("添加权限")
     @RequestMapping(value = "/create", method = RequestMethod.POST)

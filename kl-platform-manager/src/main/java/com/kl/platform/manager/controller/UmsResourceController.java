@@ -2,10 +2,12 @@ package com.kl.platform.manager.controller;
 
 import com.kl.platform.common.api.CommonPage;
 import com.kl.platform.common.api.CommonResult;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.model.UmsResource;
 import com.kl.user.api.service.UmsResourceService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +23,7 @@ import java.util.Map;
 @RequestMapping("/resource")
 public class UmsResourceController {
 
-    @Autowired
+    @DubboReference(version = UserApiVersion.VERSION_1,group = UserApiVersion.GROUP_KL)
     private UmsResourceService resourceService;
 
     @ApiOperation("添加后台资源")

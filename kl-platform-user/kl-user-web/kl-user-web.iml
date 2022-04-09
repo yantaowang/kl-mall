@@ -27,6 +27,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="kl-user-service" />
     <orderEntry type="module" module-name="kl-user-api" />
+    <orderEntry type="module" module-name="kl-platform-common" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.3.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-validation:2.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.2.8.RELEASE" level="project" />
@@ -117,11 +120,9 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-jaxrs2:9.7.0" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:10.10.1" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-jaxrs:10.10.1" level="project" />
-    <orderEntry type="module" module-name="kl-platform-common" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.3.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.7.11" level="project" />
     <orderEntry type="library" name="Maven: com.kl:kl-web-starter:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.kl:kl-core:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.7.11" level="project" />
     <orderEntry type="library" name="Maven: net.logstash.logback:logstash-logback-encoder:5.2" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />

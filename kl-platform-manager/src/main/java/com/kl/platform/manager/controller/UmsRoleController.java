@@ -2,10 +2,12 @@ package com.kl.platform.manager.controller;
 
 import com.kl.platform.common.api.CommonPage;
 import com.kl.platform.common.api.CommonResult;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.model.*;
 import com.kl.user.api.service.UmsRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +21,7 @@ import java.util.List;
 @Api(tags = "UmsRoleController", description = "后台用户角色管理")
 @RequestMapping("/role")
 public class UmsRoleController {
-    @Autowired
+    @DubboReference(version = UserApiVersion.VERSION_1,group = UserApiVersion.GROUP_KL)
     private UmsRoleService roleService;
 
     @ApiOperation("添加角色")

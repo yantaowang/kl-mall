@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>kl-platform-product</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>kl-product-api</module>
+        <module>kl-product-service</module>
+        <module>kl-product-web</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

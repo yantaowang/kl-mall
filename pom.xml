@@ -9,11 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-
         <module>kl-platform-user</module>
         <module>kl-platform-product</module>
         <module>kl-platform-manager</module>
         <module>kl-platform-common</module>
+        <module>kl-platform-order</module>
+        <module>kl-platform-other</module>
     </modules>
 
     <properties>
@@ -53,6 +54,51 @@
             <dependency>
                 <groupId>com.kl</groupId>
                 <artifactId>kl-user-web</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-product-api</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-product-service</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-product-web</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-other-api</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-other-service</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-other-web</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-order-api</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-order-service</artifactId>
+                <version>${kl-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kl</groupId>
+                <artifactId>kl-order-web</artifactId>
                 <version>${kl-platform.version}</version>
             </dependency>
             <dependency>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="false" scanPeriod="60 seconds" debug="false">
+
+    <property name="pattern" value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%tid] [%X{trace_id}] [%-5level] %logger{50}:%line - %msg%n"/>
+    <springProperty scope="context" name="logLeve" source="log.level" defaultValue="INFO"/>
+    <springProperty scope="context" name="projectName" source="spring.application.name" defaultValue="kl-user-web"/>
+
+    <!-- 标准输出配置 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout">
+                <pattern>${pattern}</pattern>
+            </layout>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出配置 -->
+    <appender name="FILEOUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/www/logs/${projectName}/${projectName}-full.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/www/logs/${projectName}/${projectName}-full.%d{yyyyMMdd}.log
+            </fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout">
+                <pattern>${pattern}</pattern>
+            </layout>
+        </encoder>
+    </appender>
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--<encoding>UTF-8</encoding>-->
+        <file>/www/logs/${projectName}/${projectName}-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>/www/logs/${projectName}/${projectName}-error.%d{yyyyMMdd}.log
+            </FileNamePattern>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout">
+                <pattern>${pattern}</pattern>
+            </layout>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+
+    <springProfile name="dev,local,test,pre">
+        <root level="${logLeve}">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="FILEOUT"/>
+            <appender-ref ref="ERROR_FILE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="prod">
+        <root level="${logLeve}">
+            <appender-ref ref="FILEOUT"/>
+            <appender-ref ref="ERROR_FILE"/>
+        </root>
+    </springProfile>
+</configuration>

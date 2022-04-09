@@ -3,10 +3,21 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/kl-mall.iml" filepath="$PROJECT_DIR$/.idea/kl-mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-order/kl-order-api/kl-order-api.iml" filepath="$PROJECT_DIR$/kl-platform-order/kl-order-api/kl-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-order/kl-order-service/kl-order-service.iml" filepath="$PROJECT_DIR$/kl-platform-order/kl-order-service/kl-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-order/kl-order-web/kl-order-web.iml" filepath="$PROJECT_DIR$/kl-platform-order/kl-order-web/kl-order-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-other/kl-other-api/kl-other-api.iml" filepath="$PROJECT_DIR$/kl-platform-other/kl-other-api/kl-other-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-other/kl-other-service/kl-other-service.iml" filepath="$PROJECT_DIR$/kl-platform-other/kl-other-service/kl-other-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-other/kl-other-web/kl-other-web.iml" filepath="$PROJECT_DIR$/kl-platform-other/kl-other-web/kl-other-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/kl-platform-common/kl-platform-common.iml" filepath="$PROJECT_DIR$/kl-platform-common/kl-platform-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/kl-platform-manager/kl-platform-manager.iml" filepath="$PROJECT_DIR$/kl-platform-manager/kl-platform-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-order/kl-platform-order.iml" filepath="$PROJECT_DIR$/kl-platform-order/kl-platform-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-other/kl-platform-other.iml" filepath="$PROJECT_DIR$/kl-platform-other/kl-platform-other.iml" />
       <module fileurl="file://$PROJECT_DIR$/kl-platform-product/kl-platform-product.iml" filepath="$PROJECT_DIR$/kl-platform-product/kl-platform-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-platform-user.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-platform-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-product/kl-product-api/kl-product-api.iml" filepath="$PROJECT_DIR$/kl-platform-product/kl-product-api/kl-product-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-product/kl-product-service/kl-product-service.iml" filepath="$PROJECT_DIR$/kl-platform-product/kl-product-service/kl-product-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kl-platform-product/kl-product-web/kl-product-web.iml" filepath="$PROJECT_DIR$/kl-platform-product/kl-product-web/kl-product-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-user-api/kl-user-api.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-user-api/kl-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-user-service/kl-user-service.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-user-service/kl-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/kl-platform-user/kl-user-web/kl-user-web.iml" filepath="$PROJECT_DIR$/kl-platform-user/kl-user-web/kl-user-web.iml" />

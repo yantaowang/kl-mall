@@ -3,10 +3,12 @@ package com.kl.platform.manager.controller;
 import com.kl.platform.common.api.CommonPage;
 import com.kl.platform.common.api.CommonResult;
 import com.kl.user.api.dto.UmsMenuNode;
+import com.kl.user.api.dversion.UserApiVersion;
 import com.kl.user.api.model.UmsMenu;
 import com.kl.user.api.service.UmsMenuService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +23,7 @@ import java.util.List;
 @RequestMapping("/menu")
 public class UmsMenuController {
 
-    @Autowired
+    @DubboReference(version = UserApiVersion.VERSION_1,group = UserApiVersion.GROUP_KL)
     private UmsMenuService menuService;
 
     @ApiOperation("添加后台菜单")

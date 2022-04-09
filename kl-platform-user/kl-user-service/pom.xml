@@ -102,10 +102,6 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.kl</groupId>
-            <artifactId>kl-platform-common</artifactId>
-        </dependency>
     </dependencies>
 
 </project>
