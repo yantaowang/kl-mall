@@ -556,7 +556,7 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
 
-  <resultMap id="returnApplyDetailResultMap" type="com.macro.mall.dto.OmsOrderReturnApplyResult" extends="com.kl.order.service.data.OmsOrderReturnApplyMapper.BaseResultMap">
+  <resultMap id="returnApplyDetailResultMap" type="com.kl.other.api.dto.OmsOrderReturnApplyResult" extends="com.kl.order.service.data.OmsOrderReturnApplyMapper.BaseResultMap">
     <association property="companyAddress" resultMap="com.kl.order.service.data.OmsCompanyAddressMapper.BaseResultMap" columnPrefix="ca_"/>
   </resultMap>
   <select id="getList" resultMap="com.kl.order.service.data.OmsOrderReturnApplyMapper.BaseResultMap">

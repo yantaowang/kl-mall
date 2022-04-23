@@ -826,7 +826,7 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
 
-  <resultMap id="orderDetailResultMap" type="com.macro.mall.dto.OmsOrderDetail" extends="com.kl.order.service.data.OmsOrderMapper.BaseResultMap">
+  <resultMap id="orderDetailResultMap" type="com.kl.other.api.dto.OmsOrderDetail" extends="com.kl.order.service.data.OmsOrderMapper.BaseResultMap">
     <collection property="orderItemList" resultMap="com.kl.order.service.data.OmsOrderItemMapper.BaseResultMap" columnPrefix="item_"/>
     <collection property="historyList" resultMap="com.kl.order.service.data.OmsOrderOperateHistoryMapper.BaseResultMap" columnPrefix="history_"/>
   </resultMap>

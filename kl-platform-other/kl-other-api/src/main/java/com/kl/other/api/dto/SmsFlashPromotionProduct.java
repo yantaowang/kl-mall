@@ -10,8 +10,10 @@ import lombok.Setter;
  * Created by macro on 2018/11/16.
  */
 public class SmsFlashPromotionProduct extends SmsFlashPromotionProductRelation {
-    @Getter
-    @Setter
-    @ApiModelProperty("关联商品")
-    private PmsProduct product;
+//    @Getter
+//    @Setter
+//    @ApiModelProperty("关联商品")
+//    private PmsProduct product;
+
+    // TODO: 2022-04-23  
 }
