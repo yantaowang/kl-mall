@@ -4,10 +4,12 @@ import com.github.pagehelper.PageHelper;
 import com.kl.order.api.dto.OmsOrderReturnApplyResult;
 import com.kl.order.api.dto.OmsReturnApplyQueryParam;
 import com.kl.order.api.dto.OmsUpdateStatusParam;
+import com.kl.order.api.dversion.OrderApiVersion;
 import com.kl.order.api.service.OmsOrderReturnApplyService;
 import com.kl.order.service.data.OmsOrderReturnApplyMapper;
 import com.kl.order.api.model.OmsOrderReturnApply;
 import com.kl.order.api.model.OmsOrderReturnApplyExample;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +20,7 @@ import java.util.List;
  * 订单退货管理Service
  * Created by macro on 2018/10/18.
  */
-@Service
+@DubboService(version = OrderApiVersion.VERSION_1, group = OrderApiVersion.GROUP_KL)
 public class OmsOrderReturnApplyServiceImpl implements OmsOrderReturnApplyService {
 
     @Autowired

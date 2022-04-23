@@ -1,10 +1,12 @@
 package com.kl.order.service.service;
 
 import com.github.pagehelper.PageHelper;
+import com.kl.order.api.dversion.OrderApiVersion;
 import com.kl.order.api.service.OmsOrderReturnReasonService;
 import com.kl.order.service.data.OmsOrderReturnReasonMapper;
 import com.kl.order.api.model.OmsOrderReturnReason;
 import com.kl.order.api.model.OmsOrderReturnReasonExample;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,7 @@ import java.util.List;
  * 订单原因管理Service实现类
  * Created by macro on 2018/10/17.
  */
-@Service
+@DubboService(version = OrderApiVersion.VERSION_1, group = OrderApiVersion.GROUP_KL)
 public class OmsOrderReturnReasonServiceImpl implements OmsOrderReturnReasonService {
     @Autowired
     private OmsOrderReturnReasonMapper returnReasonMapper;

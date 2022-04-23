@@ -1,7 +1,7 @@
 package com.kl.platform.manager.controller;
 
-import com.kl.other.api.model.CmsPrefrenceArea;
-import com.kl.other.api.service.CmsPrefrenceAreaService;
+import com.kl.order.api.model.CmsPrefrenceArea;
+import com.kl.order.api.service.CmsPrefrenceAreaService;
 import com.kl.platform.common.api.CommonResult;
 import com.kl.product.api.dversion.ProductApiVersion;
 import io.swagger.annotations.Api;

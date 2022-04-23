@@ -3,7 +3,7 @@
 
     <property name="pattern" value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%tid] [%X{trace_id}] [%-5level] %logger{50}:%line - %msg%n"/>
     <springProperty scope="context" name="logLeve" source="log.level" defaultValue="INFO"/>
-    <springProperty scope="context" name="projectName" source="spring.application.name" defaultValue="kl-product-web"/>
+    <springProperty scope="context" name="projectName" source="spring.application.name" defaultValue="kl-order-web"/>
 
     <!-- 标准输出配置 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">

@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.kl</groupId>
-            <artifactId>kl-other-api</artifactId>
+            <artifactId>kl-other-service</artifactId>
         </dependency>
         <dependency>
             <groupId>com.kl</groupId>

@@ -1,11 +1,11 @@
 package com.kl.platform.manager.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.kl.other.api.dversion.OtherApiVersion;
-import com.kl.other.api.model.CmsPrefrenceAreaProductRelation;
-import com.kl.other.api.model.CmsSubjectProductRelation;
-import com.kl.other.api.service.CmsPrefrenceAreaProductRelationService;
-import com.kl.other.api.service.CmsSubjectProductRelationService;
+import com.kl.order.api.dversion.OtherApiVersion;
+import com.kl.order.api.model.CmsPrefrenceAreaProductRelation;
+import com.kl.order.api.model.CmsSubjectProductRelation;
+import com.kl.order.api.service.CmsPrefrenceAreaProductRelationService;
+import com.kl.order.api.service.CmsSubjectProductRelationService;
 import com.kl.platform.manager.service.ProductService;
 import com.kl.product.api.dto.PmsProductParam;
 import com.kl.product.api.dversion.ProductApiVersion;

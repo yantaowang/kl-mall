@@ -3,7 +3,7 @@ package com.kl.order.api.dversion;
 /**
  * dubbo 常量
  */
-public class UserApiVersion {
+public class OrderApiVersion {
     public static final String VERSION_1 = "1.0.0";
     public static final String GROUP_KL = "kl-order-api";
     // spring cloud 注册中心

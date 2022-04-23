@@ -4,11 +4,11 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: kl-product-web
+    name: kl-platform-manager
 
 server:
-  context-path: /kl/product
-  port: ${server_port:16092}
+  context-path: /kl/manager
+  port: ${server_port:16095}
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
   secret: mall-portal-secret #JWT加解密使用的密钥

@@ -2,12 +2,14 @@ package com.kl.order.service.service;
 
 import com.github.pagehelper.PageHelper;
 import com.kl.order.api.dto.*;
+import com.kl.order.api.dversion.OrderApiVersion;
 import com.kl.order.api.service.OmsOrderService;
 import com.kl.order.service.data.OmsOrderMapper;
 import com.kl.order.service.data.OmsOrderOperateHistoryMapper;
 import com.kl.order.api.model.OmsOrder;
 import com.kl.order.api.model.OmsOrderExample;
 import com.kl.order.api.model.OmsOrderOperateHistory;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +21,7 @@ import java.util.stream.Collectors;
  * 订单管理Service实现类
  * Created by macro on 2018/10/11.
  */
-@Service
+@DubboService(version = OrderApiVersion.VERSION_1, group = OrderApiVersion.GROUP_KL)
 public class OmsOrderServiceImpl implements OmsOrderService {
     @Autowired
     private OmsOrderMapper orderMapper;

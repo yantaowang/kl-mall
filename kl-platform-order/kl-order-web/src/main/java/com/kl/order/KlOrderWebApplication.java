@@ -1,4 +1,4 @@
-package com.kl;
+package com.kl.order;
 
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
@@ -9,13 +9,13 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan({"com.kl.user.service.data"})
+@MapperScan({"com.kl.order.service.data"})
 @EnableAsync
 @Slf4j
-public class KlUserWebApplication {
+public class KlOrderWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KlUserWebApplication.class, args);
-        log.info("KlUserWebApplication 启动完成");
+        SpringApplication.run(KlOrderWebApplication.class, args);
+        log.info("KlOrderWebApplication 启动完成");
     }
 }

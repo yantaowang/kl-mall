@@ -23,7 +23,7 @@ spring:
         server-addr: ${NACOS_CONFIG_URL:127.0.0.1:8848}
         username: ${NACOS_DISCOVERY_USERNAME:nacos}
         password: ${NACOS_DISCOVERY_PASSWORD:nacos}
-        namespace: test-product
+        namespace: test-manager
         group: kl
         file-extension: yml
         extension-configs:

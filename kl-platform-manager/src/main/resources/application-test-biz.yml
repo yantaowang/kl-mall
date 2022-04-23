@@ -1,0 +1,52 @@
+spring:
+  redis:
+    database: 3
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 1000
+    lettuce:
+      pool:
+        max-active: 16
+        max-idle: 16
+        max-wait: 300
+        min-idle: 0
+dubbo:
+  cloud:
+    subscribed-services: ''
+  scan:
+    base-packages: com.kl.order.service.service
+  protocol:
+    name: dubbo
+    port: -1
+    # 单注册中心
+    registry:
+      address: spring-cloud://localhost
+  provider:
+    filter: -exception
+    retries: 0
+task:
+  pool:
+    corePoolSize: 5
+    maxPoolSize: 10
+    keepAliveSeconds: 60
+    queueCapacity: 1024
+kl:
+  partner:
+    enable: true
+# 健康监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "info,health,prometheus,server-down"
+  endpoint:
+    nacos-discovery:
+      cache:
+        time-to-live: 1000ms
+    health:
+      show-details: always
+logging:
+  level:
+    root: info
+    com.kl.user.service.data: debug

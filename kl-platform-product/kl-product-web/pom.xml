@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>com.kl</groupId>
-            <artifactId>kl-product-api</artifactId>
+            <artifactId>kl-product-service</artifactId>
         </dependency>
         <dependency>
             <groupId>com.kl</groupId>

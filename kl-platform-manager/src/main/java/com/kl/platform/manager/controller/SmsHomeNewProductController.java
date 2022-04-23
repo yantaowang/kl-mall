@@ -2,13 +2,12 @@ package com.kl.platform.manager.controller;
 
 import com.kl.platform.common.api.CommonPage;
 import com.kl.platform.common.api.CommonResult;
-import com.kl.other.api.model.SmsHomeNewProduct;
-import com.kl.other.api.service.SmsHomeNewProductService;
+import com.kl.order.api.model.SmsHomeNewProduct;
+import com.kl.order.api.service.SmsHomeNewProductService;
 import com.kl.product.api.dversion.ProductApiVersion;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
