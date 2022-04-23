@@ -69,6 +69,7 @@
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.25.0-GA" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-annotation:3.4.3" level="project" />
     <orderEntry type="module" module-name="kl-product-api" />
+    <orderEntry type="module" module-name="kl-order-api" />
     <orderEntry type="module" module-name="kl-other-api" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.3.2.RELEASE" level="project" />
